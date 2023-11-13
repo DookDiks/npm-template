@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "dookdiks npm package template",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "release": "npm publish --access=public || echo 'version already published'",
