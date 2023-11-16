@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "release": "npm publish --access=public || echo 'version already published'",
+    "build": "tsc",
+    "release": "npm run build && npm publish --access=public || echo 'version already published'",
     "test": "jest"
   },
   "repository": {
